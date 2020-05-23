@@ -25,7 +25,8 @@
   "homepage": "https://github.com/JunLargo/todo-app#readme",
   "dependencies": {
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-flip-move": "^3.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",

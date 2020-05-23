@@ -1,5 +1,5 @@
 import React from 'react'
-import { render } from 'react-dom'
+import FlipMove from 'react-flip-move'
 
 export default class TodoItems extends React.Component {
    constructor(props) {
@@ -22,8 +22,10 @@ export default class TodoItems extends React.Component {
       const todoEntries = this.props.entries
       const listItems = todoEntries.map(this.createTodo)
       return (
-         <ul>
-            {listItems}
+         <ul className='theList'>
+            <FlipMove duration={250} easing='ease-out'>
+               {listItems}
+            </FlipMove>
          </ul>
       )
    }

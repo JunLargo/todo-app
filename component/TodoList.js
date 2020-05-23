@@ -26,7 +26,6 @@ export default class Todolist extends React.Component {
          })
          this._inputElement.value = ''
       }
-      console.log(itemsArray)
       e.preventDefault()
    }
 
@@ -40,8 +39,8 @@ export default class Todolist extends React.Component {
 
    render() {
       return (
-         <div>
-            <div>
+         <div className='todoListMain'>
+            <div className='header'>
                <form onSubmit={this.addItems}>
                   <input
                      type="text"
